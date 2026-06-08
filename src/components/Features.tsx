@@ -1,0 +1,53 @@
+export default function Features() {
+    const features = [
+      {
+        icon: "💰",
+        title: "Meeting Cost Analysis",
+        description:
+          "See the real financial cost of every meeting and identify wasted spending.",
+      },
+      {
+        icon: "🎯",
+        title: "Ownership Gap Detection",
+        description:
+          "Find action items without assigned owners before they get forgotten.",
+      },
+      {
+        icon: "🔄",
+        title: "Circular Discussion Detection",
+        description:
+          "Detect repeated conversations and unnecessary meeting loops.",
+      },
+    ];
+  
+    return (
+      <section className="max-w-6xl mx-auto px-6 py-24">
+        <h2 className="text-4xl font-bold text-center mb-4">
+          Powerful AI Insights
+        </h2>
+  
+        <p className="text-center text-gray-400 mb-14">
+          Turn every meeting into measurable outcomes.
+        </p>
+  
+        <div className="grid md:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="bg-[#0d0d0d] border border-gray-800 rounded-2xl p-8 hover:border-green-500 transition"
+            >
+              <div className="text-5xl mb-6">{feature.icon}</div>
+  
+              <h3 className="text-xl font-semibold mb-4">
+                {feature.title}
+              </h3>
+  
+              <p className="text-gray-400 leading-relaxed">
+                {feature.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+    );
+  }
