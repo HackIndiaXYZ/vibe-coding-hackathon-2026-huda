@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
     return (
       <section className="text-center pt-32">
@@ -14,9 +16,12 @@ export default function Hero() {
         </p>
   
         <div className="mt-10 flex justify-center gap-4">
-          <button className="bg-green-500 px-6 py-3 rounded-lg text-black font-semibold">
-            Start Analysis
-          </button>
+        <Link
+              href="/upload"
+             className="bg-green-500 px-6 py-3 rounded-lg text-black font-semibold">
+             
+              Start Analysis
+           </Link>
   
           <button className="border border-gray-600 px-6 py-3 rounded-lg">
             Watch Demo
