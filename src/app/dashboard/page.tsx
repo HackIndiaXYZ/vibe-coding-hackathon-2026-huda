@@ -3,6 +3,10 @@ import Speakers from "@/components/Speakers";
 import ActionTable from "@/components/ActionTable";
 import Timeline from "@/components/Timeline";
 import Sidebar from "@/components/Sidebar";
+import MeetingScore from "@/components/MeetingScore";
+import RiskAlerts from "@/components/RiskAlerts";
+
+
 
 export default function DashboardPage() {
   return (
@@ -15,7 +19,8 @@ export default function DashboardPage() {
         <h1 className="text-5xl font-bold mb-8">
           Meeting Analysis Report
         </h1>
-
+        <MeetingScore />
+        <RiskAlerts />
         <div className="grid md:grid-cols-4 gap-6 mb-8">
 
           <div className="bg-[#111] p-6 rounded-xl">

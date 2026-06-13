@@ -9,7 +9,7 @@ export default function AnalyzePage() {
   useEffect(() => {
     const timer = setTimeout(() => {
       router.push("/dashboard");
-    }, 5000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, [router]);
